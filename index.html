@@ -79,6 +79,22 @@
                 background: linear-gradient(to top, #000000 0%, transparent 100%);
                 z-index:1;
             }
+            .filterright{
+                position:absolute;
+                left:5vh;
+                width:25%;
+                height:60vh;
+                background: linear-gradient(to right, #000000 0%, transparent 100%);
+                z-index:1;
+            }
+            .filterleft{
+                position:absolute;
+                right:5vh;
+                width:25%;
+                height:60vh;
+                background: linear-gradient(to left, #000000 0%, transparent 100%);
+                z-index:1;
+            }
             .filterdown{
                 position:absolute;
                 width:100%;
@@ -446,10 +462,35 @@
                 justify-content:center;
                 align-items:center;
                 background:#242424;
-                width:50%;
+                width:75vh;
                 height:20vh;
                 border-radius:5vh;
                 margin-left:10vh;
+            }
+            .carousel{
+                margin-top:5vh;
+                width:90%;
+                height:60vh;
+                overflow-y:hidden;
+                overflow-x:auto;
+                display:flex;
+                flex-direction:row;
+                justify-content:center;
+                align-items:center;
+                -webkit-overflow-scrolling: touch;
+            }
+            .traincarousel{
+                margin:2.5vh;
+                width:40vh;
+                height:50vh;
+                object-fit:cover;
+                filter:saturate(0);
+                transition-duration:0.2s;
+            }
+            .traincarousel:hover{
+                transition-duration:0.2s;
+                width:50vh;
+                filter:none;
             }
         </style>
     </head>
@@ -771,15 +812,39 @@
                 </div>
             </div>
         </div>
-        <div class="introsection" style="flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
+        <div class="introsection" style="flex-direction:column;margin-top:10vh;" data-aos="fade-up" data-aos-duration="1000">
             <div style="display:flex;flex-direction:row;">
                 <div style="width:50%;display:flex;flex-direction:column;justify-content:center;align-items:center;">
                     <div style="font-family:Baskervville;color:#ACACAC;font-size:4vh;">Capured Moments In</div>
                     <div style="font-family:Baskervville;color:white;font-size:11vh;">The Train Ride</div>
                 </div>
                 <div class="carouselinstruction">
-                    <div style="text-align:center;font-family:baskervville;font-style:italic;font-size:4vh;color:white;padding:2vh;">Use arrow keys to navigate the carousel below</div>
+                    <div style="width:60vh;text-align:center;font-family:baskervville;font-style:italic;font-size:3vh;color:white;">Try scrolling left and right to view more images. I was just out ideas for this one ngl.</div>
                 </div>
+            </div>
+            <div class="carousel">
+                <img src="./Train/6A9DA715-48CC-4457-81B7-865A098B24A3_1_105_c.jpeg" class="traincarousel" style="padding-left:15vh;">
+                <img src="./Train/6A303CFD-BBA0-4C7E-90CE-87CF4F79D985_1_105_c.jpeg" class="traincarousel">
+                <img src="./Train/08FA2A46-AFA4-4340-A2CE-1FE3617EFD4A_1_105_c.jpeg" class="traincarousel">
+                <img src="./Train/025421C6-3C74-4BB4-A7AF-57338E013053_1_105_c.jpeg" class="traincarousel">
+                <img src="./Train/1000059967.jpg" class="traincarousel">
+                <img src="./Train/1000059970.jpg" class="traincarousel">
+                <img src="./Train/1000059971.jpg" class="traincarousel">
+                <img src="./Train/1000059974.jpg" class="traincarousel">
+                <img src="./Train/1000059977.jpg" class="traincarousel">
+                <img src="./Train/1000059979.jpg" class="traincarousel">
+                <img src="./Train/1000059983.jpg" class="traincarousel">
+                <img src="./Train/1000059990.jpg" class="traincarousel">
+                <img src="./Train/1000059992.jpg" class="traincarousel">
+                <img src="./Train/ABD72715-0301-4D5C-826C-DD489AE7E32D_1_105_c.jpeg" class="traincarousel">
+                <img src="./Train/AF03D3C8-EA74-419D-987D-770BF8BF3BD8_1_105_c.jpeg" class="traincarousel">
+                <img src="./Train/BA0B0985-11F5-4183-9AE3-DCD92A9BA994_1_105_c.jpeg" class="traincarousel">
+                <img src="./Train/D8DFC1C7-DF83-4481-9826-440AEB5696BD_1_105_c.jpeg" class="traincarousel">
+                <img src="./Train/DC32EAF7-7BC1-4502-A7A4-087E5A96EBBF_1_105_c.jpeg" class="traincarousel">
+                <img src="./Train/DF40FBBF-0BA0-45FE-A191-F3A0DE4D23DE_1_105_c.jpeg" class="traincarousel">
+                <img src="./Train/F0640167-9E86-41F3-B0FD-AE074B46E859_1_105_c.jpeg" class="traincarousel" style="padding-right:15vh;">
+                <div class="filterright"></div>
+                <div class="filterleft"></div>
             </div>
         </div>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
