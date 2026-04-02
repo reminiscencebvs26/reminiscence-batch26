@@ -523,6 +523,101 @@
                 transition-duration:0.3s;
                 opacity:0.8;
             }
+            .phaseonefooter{
+                background:#1c1c1c;
+                width:100%;
+                height:70vh;
+                display:flex;
+                flex-direction:row;
+                justify-content:center;
+                align-items:center;
+            }
+            .phaseonecreds{
+                font-family:bebas neue;
+                color:#464646;
+                background:#100f0f;
+                width:100%;
+                height:12.5vh;
+                text-align:center;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                letter-spacing:2vh;
+                font-size:2vh;
+            }
+            .footer1{
+                display:flex;
+                flex-direction:column;
+                align-items:left;
+                justify-content:center;
+            }
+            .foothead1{
+                font-family:bebas neue;
+                font-size:12.5vh;
+                color:white;
+            }
+            .footpara1{
+                color:#ACACAC;
+                margin-top:5vh;
+                font-size:4vh;
+                font-family:bebas neue;
+                width:70vh;
+            }
+            .foothead2{
+                color:white;
+                font-family:bebas neue;
+                font-size:6vh;
+                outline:none;
+                background:none;
+                border:none;
+                cursor:pointer;
+                text-align:left;
+            }
+            .footpara2{
+                text-align:left;
+                background:none;
+                font-size:4vh;
+                width:30vh;
+                height:6.5vh;
+                font-family:bebas neue;
+                color:#ACACAC;
+                outline:none;
+                border:none;
+                cursor:pointer;
+            }
+            .intimate{
+                width:75%;
+                height:75vh;
+                border-radius:10vh;
+                background:rgb(32, 32, 32);
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+            }
+            .intimateimg{
+                position:absolute;
+                width:75%;
+                height: 75vh;
+                border-radius:10vh;
+                object-fit:cover;
+                filter:saturate(0) blur(3vh) brightness(0.3);
+            }
+            .intimatehead{
+                color:white;
+                font-family:bebas neue;
+                font-size:15vh;
+                z-index:2
+            }
+            .intimatepara{
+                margin:3vh;
+                color:white;
+                font-family:baskervville;
+                font-size:3vh;
+                z-index:2;
+                width:70%;
+                text-align:center;
+            }
         </style>
     </head>
     <body>
@@ -633,7 +728,7 @@
                 <img src="./By The Shore/IMG_3218.jpeg" class="eitherside2">
             </div>
         </div>
-        <div class="standardimgviewer">
+        <div class="standardimgviewer" style="margin-top:2.5vh;">
             <img src="./By The Shore/image-9.jpeg">
             <img src="./By The Shore/IMG_3035.jpeg">
             <img src="./By The Shore/IMG_3053.jpeg">
@@ -652,32 +747,32 @@
         <div class="introsection" style="flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
             <div class="boatno">BOAT-1</div>
             <div class="boatppl">SOUMYAA | ROSHNI | AKSHAYA | KEERTHANA | SHIVANI</div>
-            <img src="./Neithal Boat/IMG_3094.png" class="boatimg">
+            <img src="./Neithal Boat/IMG_3094.png" class="boatimg" loading="lazy">
         </div>
         <div class="introsection" style="flex-direction:column;">
             <div class="boatno">BOAT-2</div>
             <div class="boatppl">THANEESH | ARNAV | AKHIL | MRIDHULA | SREE SRUTHI | KRITHIKA</div>
-            <img src="./Neithal Boat/IMG_3176.png" class="boatimg">
+            <img src="./Neithal Boat/IMG_3176.png" class="boatimg" loading="lazy">
         </div>
         <div class="introsection" style="flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
             <div class="boatno">BOAT-3</div>
             <div class="boatppl">SRUTHI | PRAGYA | SHRUTHI | PADMA | NAVYA | HARSHINI</div>
-            <img src="./Neithal Boat/IMG_3096.png" class="boatimg">
+            <img src="./Neithal Boat/IMG_3096.png" class="boatimg" loading="lazy">
         </div>
         <div class="introsection" style="flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
             <div class="boatno">BOAT-4</div>
             <div class="boatppl">PRANAV | JISHNU | VARUN | PRIYANSHU | LIKITH | AKSHAJ</div>
-            <img src="./Neithal Boat/IMG_3097.png" class="boatimg">
+            <img src="./Neithal Boat/IMG_3097.png" class="boatimg" loading="lazy">
         </div>
         <div class="introsection" style="flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
             <div class="boatno">BOAT-5</div>
             <div class="boatppl">KAVIN | KRITHIK | SATYAVEL | SIDDHARTH | DHRUV</div>
-            <img src="./Neithal Boat/IMG_3091.png" class="boatimg">
+            <img src="./Neithal Boat/IMG_3091.png" class="boatimg" loading="lazy">
         </div>
         <div class="introsection" style="flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
             <div class="boatno">BOAT-6</div>
             <div class="boatppl">NETHRA | AASHRITA | YUVIKA | ESHA | PAVITHRA | DITYA</div>
-            <img src="./Neithal Boat/IMG_3090.png" class="boatimg">
+            <img src="./Neithal Boat/IMG_3090.png" class="boatimg" loading="lazy">
         </div>
         <div class="introsection" style="flex-direction: column;" id="hoysalajs" data-aos="fade-up" data-aos-duration="1000">
             <div class="filterdown"></div>
@@ -722,6 +817,125 @@
                 <img src="./Train/DC32EAF7-7BC1-4502-A7A4-087E5A96EBBF_1_105_c.jpeg" class="traincarousel">
                 <img src="./Train/DF40FBBF-0BA0-45FE-A191-F3A0DE4D23DE_1_105_c.jpeg" class="traincarousel">
                 <img src="./Train/F0640167-9E86-41F3-B0FD-AE074B46E859_1_105_c.jpeg" class="traincarousel">
+            </div>
+        </div>
+        <div class="introsection" style="margin-top:10vh;flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
+            <div class='upperdaywise'>
+                <div class="daywiseheading">DAY&nbsp;<span>0</span></div>
+            </div>
+            <div class="daywisepara">This was the beginning of our Hoysala trip. Why is it called Day 0? I dont really know, Lydia mam chose to call it that. As for what happened; reportedly the females slept by 10 pm while the guys were awake till 2 or 3 am as far as I can recall.</div>
+            <div style="font-family:bebas neue; font-size:2.5vh;color:white;text-align:center;margin-top:5vh;">(5 PHOTOS HORIZONTAL SCROLL)</div>
+            <div class="infinitecarousel">
+                <div class="filterleft"></div>
+                <img src="./Day%200/IMG_4035_optimized_100.jpg" class="group">
+                <img src="./Day%200/IMG_4040_2_optimized_100.jpg" class="group">
+                <img src="./Day%200/IMG_4040_optimized_100.jpg" class="group">
+                <img src="./Day%200/IMG_4047_1_optimized_100.jpg" class="group">
+                <img src="./Day%200/IMG_4047_optimized_100.jpg" class="group" style="padding-right:10vh;">
+                <div class="filterright"></div>
+            </div>
+        </div>
+        <div class="introsection" style="margin-top:10vh;flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
+            <div class='upperdaywise'>
+                <div class="daywiseheading">DAY&nbsp;<span>1</span></div>
+            </div>
+            <div class="daywisepara">This day we apparently visited 'Somnathapura'; visiting a couple of temples thereafter or maybe in Somnathapura itself honestly I cant remember. As for the last bit where we saw a skit of some kind in a temple surrounding a square grid of holy water (last image), do y'all remember pranav's cellphone ringing scaring the life out of some of us ;-;-;</div>
+            <div style="font-family:bebas neue; font-size:2.5vh;color:white;text-align:center;margin-top:5vh;">(24 PHOTOS HORIZONTAL SCROLL)</div>
+            <div class="infinitecarousel">
+                <div class="filterleft"></div>
+                <img src="./Day%201/IMG_4071.jpg" class="group">
+                <img src="./Day%201/IMG_4078.jpg" class="group">
+                <img src="./Day%201/IMG_4079.jpg" class="group">
+                <img src="./Day%201/IMG_4081.jpg" class="group">
+                <img src="./Day%201/IMG_4084.jpg" class="group">
+                <img src="./Day%201/IMG_4086.jpg" class="group">
+                <img src="./Day%201/IMG_4090.jpg" class="group">
+                <img src="./Day%201/IMG_4093.jpg" class="group">
+                <img src="./Day%201/IMG_4094.jpg" class="group">
+                <img src="./Day%201/IMG_4095.jpg" class="group">
+                <img src="./Day%201/IMG_4097.jpg" class="group">
+                <img src="./Day%201/IMG_4072.jpg" class="group">
+                <img src="./Day%201/IMG_4098.jpg" class="group">
+                <img src="./Day%201/IMG_4101.jpg" class="group">
+                <img src="./Day%201/IMG_4102.jpg" class="group">
+                <img src="./Day%201/IMG_4105.jpg" class="group">
+                <img src="./Day%201/IMG_4107.jpg" class="group">
+                <img src="./Day%201/IMG_4111.jpg" class="group">
+                <img src="./Day%201/IMG_4115.jpg" class="group">
+                <img src="./Day%201/IMG_4117.jpg" class="group">
+                <img src="./Day%201/IMG_4120.jpg" class="group">
+                <img src="./Day%201/IMG_4121.jpg" class="group">
+                <img src="./Day%201/IMG_4123.jpg" class="group">
+                <img src="./Day%201/IMG_4150.jpg" class="group" style="padding-right:10vh;">
+                <div class="filterright"></div>
+            </div>
+        </div>
+        <div class="introsection" style="margin-top:10vh;flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
+            <div class='upperdaywise'>
+                <div class="daywiseheading">DAY&nbsp;<span>2</span></div>
+            </div>
+            <div class="daywisepara">We got a couple more temples in and I honestly can't differentiate any of them from the images. We got to see a 'musem' ig nobody remembers what they saw. All I can remember is the street dance which was quite a watch.</div>
+            <div style="font-family:bebas neue; font-size:2.5vh;color:white;text-align:center;margin-top:5vh;">(22 PHOTOS HORIZONTAL SCROLL)</div>
+            <div class="infinitecarousel">
+                <div class="filterleft"></div>
+                <img src="./Day%202/IMG_4170.jpg" class="group">
+                <img src="./Day%202/IMG_4171.jpg" class="group">
+                <img src="./Day%202/IMG_4175.jpg" class="group">
+                <img src="./Day%202/IMG_4176.jpg" class="group">
+                <img src="./Day%202/IMG_4194.jpg" class="group">
+                <img src="./Day%202/IMG_4200.jpg" class="group">
+                <img src="./Day%202/IMG_4202.jpg" class="group">
+                <img src="./Day%202/IMG_4219.jpg" class="group">
+                <img src="./Day%202/IMG_4220.jpg" class="group">
+                <img src="./Day%202/IMG_4227.jpg" class="group">
+                <img src="./Day%202/IMG_4228.jpg" class="group">
+                <img src="./Day%202/IMG_4230.jpg" class="group">
+                <img src="./Day%202/IMG_4233.jpg" class="group">
+                <img src="./Day%202/IMG_4235.jpg" class="group">
+                <img src="./Day%202/IMG_4236.jpg" class="group">
+                <img src="./Day%202/IMG_4246.jpg" class="group">
+                <img src="./Day%202/IMG_4247.jpg" class="group">
+                <img src="./Day%202/IMG_4249.jpg" class="group">
+                <img src="./Day%202/IMG_4253.jpg" class="group">
+                <img src="./Day%202/IMG_4256.jpg" class="group">
+                <img src="./Day%202/IMG_4257.jpg" class="group">
+                <img src="./Day%202/IMG_4265.jpg" class="group" style="padding-right:10vh;">
+                <div class="filterright"></div>
+            </div>
+        </div>
+        <div class="introsection" style="margin-top:10vh;flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
+            <div class='upperdaywise'>
+                <div class="daywiseheading">DAY&nbsp;<span>3</span></div>
+            </div>
+            <div class="daywisepara">This was apparently a temple in 'Halebidu' and held the most significance from the looks and the size (land) of it. We had a fun little pop quiz by Sanctum Sanctorum the result of which I dont remember.</div>
+            <div style="font-family:bebas neue; font-size:2.5vh;color:white;text-align:center;margin-top:5vh;">(23 PHOTOS HORIZONTAL SCROLL)</div>
+            <div class="infinitecarousel">
+                <div class="filterleft"></div>
+                <img src="./Day%203/IMG_4287.jpg" class="group">
+                <img src="./Day%203/IMG_4289.jpg" class="group">
+                <img src="./Day%203/IMG_4295.jpg" class="group">
+                <img src="./Day%203/IMG_4302.jpg" class="group">
+                <img src="./Day%203/IMG_4304.jpg" class="group">
+                <img src="./Day%203/IMG_4305.jpg" class="group">
+                <img src="./Day%203/IMG_4306.jpg" class="group">
+                <img src="./Day%203/IMG_4307.jpg" class="group">
+                <img src="./Day%203/IMG_4320.jpg" class="group">
+                <img src="./Day%203/IMG_4330.jpg" class="group">
+                <img src="./Day%203/IMG_4333.jpg" class="group">
+                <img src="./Day%203/IMG_4334.jpg" class="group">
+                <img src="./Day%203/IMG_4342.jpg" class="group">
+                <img src="./Day%203/IMG_4343.jpg" class="group">
+                <img src="./Day%203/IMG_4349.jpg" class="group">
+                <img src="./Day%203/IMG_4351.jpg" class="group">
+                <img src="./Day%203/IMG_4358.jpg" class="group">
+                <img src="./Day%203/IMG_4359.jpg" class="group">
+                <img src="./Day%203/IMG_4367.jpg" class="group">
+                <img src="./Day%203/IMG_4368.jpg" class="group">
+                <img src="./Day%203/IMG_4374.jpg" class="group">
+                <img src="./Day%203/IMG_4376.jpg" class="group">
+                <img src="./Day%203/IMG_4378.jpg" class="group">
+                <img src="./Day%203/IMG_4380.jpg" class="group" style="padding-right:10vh;">
+                <div class="filterright"></div>
             </div>
         </div>
         <div class="introsection" style="flex-direction: column;margin-top:10vh;" data-aos="fade-up" data-aos-duration="1000">
@@ -879,130 +1093,40 @@
                 </div>
             </div>
         </div>
-        <div class="introsection" style="margin-top:10vh;flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
-            <div class='upperdaywise'>
-                <div class="daywiseheading">DAY&nbsp;<span>0</span></div>
-            </div>
-            <div class="daywisepara">This was the beginning of our Hoysala trip. Why is it called Day 0? I dont really know, Lydia mam chose to call it that. As for what happened; reportedly the females slept by 10 pm while the guys were awake till 2 or 3 am as far as I can recall.</div>
-            <div style="font-family:bebas neue; font-size:2.5vh;color:white;text-align:center;margin-top:5vh;">(5 PHOTOS HORIZONTAL SCROLL)</div>
-            <div class="infinitecarousel">
-                <div class="filterleft"></div>
-                <img src="./Day%200/IMG_4035_optimized_100.jpg" class="group">
-                <img src="./Day%200/IMG_4040_2_optimized_100.jpg" class="group">
-                <img src="./Day%200/IMG_4040_optimized_100.jpg" class="group">
-                <img src="./Day%200/IMG_4047_1_optimized_100.jpg" class="group">
-                <img src="./Day%200/IMG_4047_optimized_100.jpg" class="group" style="padding-right:10vh;">
-                <div class="filterright"></div>
+        <div class="introsection">
+            <div class="intimate">
+                <img src="IMG_3013.jpg" class="intimateimg">
+                <div class="intimatehead">Goa & Graduation</div>
+                <div class="intimatepara">Due to possible bandwidth issues both the 'Goa' and 'Graduation' bits have been moved to another page instead of cramming it here and making your browser cry for help. Click the button below</div>
+                <button class="standardbutton" style="width:50vh;height:10vh;">LINK TO GOA</button>
             </div>
         </div>
-        <div class="introsection" style="margin-top:10vh;flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
-            <div class='upperdaywise'>
-                <div class="daywiseheading">DAY&nbsp;<span>1</span></div>
+        <footer class="phaseonefooter">
+            <div class="footer1">
+                <div class="foothead1">Reminiscence.</div>
+                <div class="footpara1">Designed and made by [12a08 BVS'26] | NOT TO BE SHARED WITH NON BVS'26 GRADUATES TO AVOID CRASHING THE WEBSITE.</div>
             </div>
-            <div class="daywisepara">This day we apparently visited 'Somnathapura'; visiting a couple of temples thereafter or maybe in Somnathapura itself honestly I cant remember. As for the last bit where we saw a skit of some kind in a temple surrounding a square grid of holy water (last image), do y'all remember pranav's cellphone ringing scaring the life out of some of us ;-;-;</div>
-            <div style="font-family:bebas neue; font-size:2.5vh;color:white;text-align:center;margin-top:5vh;">(24 PHOTOS HORIZONTAL SCROLL)</div>
-            <div class="infinitecarousel">
-                <div class="filterleft"></div>
-                <img src="./Day%201/IMG_4071.jpg" class="group">
-                <img src="./Day%201/IMG_4078.jpg" class="group">
-                <img src="./Day%201/IMG_4079.jpg" class="group">
-                <img src="./Day%201/IMG_4081.jpg" class="group">
-                <img src="./Day%201/IMG_4084.jpg" class="group">
-                <img src="./Day%201/IMG_4086.jpg" class="group">
-                <img src="./Day%201/IMG_4090.jpg" class="group">
-                <img src="./Day%201/IMG_4093.jpg" class="group">
-                <img src="./Day%201/IMG_4094.jpg" class="group">
-                <img src="./Day%201/IMG_4095.jpg" class="group">
-                <img src="./Day%201/IMG_4097.jpg" class="group">
-                <img src="./Day%201/IMG_4072.jpg" class="group">
-                <img src="./Day%201/IMG_4098.jpg" class="group">
-                <img src="./Day%201/IMG_4101.jpg" class="group">
-                <img src="./Day%201/IMG_4102.jpg" class="group">
-                <img src="./Day%201/IMG_4105.jpg" class="group">
-                <img src="./Day%201/IMG_4107.jpg" class="group">
-                <img src="./Day%201/IMG_4111.jpg" class="group">
-                <img src="./Day%201/IMG_4115.jpg" class="group">
-                <img src="./Day%201/IMG_4117.jpg" class="group">
-                <img src="./Day%201/IMG_4120.jpg" class="group">
-                <img src="./Day%201/IMG_4121.jpg" class="group">
-                <img src="./Day%201/IMG_4123.jpg" class="group">
-                <img src="./Day%201/IMG_4150.jpg" class="group" style="padding-right:10vh;">
-                <div class="filterright"></div>
+            <div class="footer1" style="margin-left:10vh;">
+                <button class="foothead2">Neithal</button>
+                <br>
+                <button class="footpara2">The Bus Ride</button>
+                <button class="footpara2">By The Shore</button>
+                <button class="footpara2">The Bus Ride</button>
             </div>
-        </div>
-        <div class="introsection" style="margin-top:10vh;flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
-            <div class='upperdaywise'>
-                <div class="daywiseheading">DAY&nbsp;<span>2</span></div>
+            <div class="footer1" style="margin-left:10vh;">
+                <button class="foothead2">Hoysala</button>
+                <br>
+                <button class="footpara2">Moments In The Train</button>
+                <button class="footpara2">Hoysala TV</button>
+                <button class="footpara2">Day Wise Photos</button>
             </div>
-            <div class="daywisepara">We got a couple more temples in and I honestly can't differentiate any of them from the images. We got to see a 'musem' ig nobody remembers what they saw. All I can remember is the street dance which was quite a watch.</div>
-            <div style="font-family:bebas neue; font-size:2.5vh;color:white;text-align:center;margin-top:5vh;">(22 PHOTOS HORIZONTAL SCROLL)</div>
-            <div class="infinitecarousel">
-                <div class="filterleft"></div>
-                <img src="./Day%202/IMG_4170.jpg" class="group">
-                <img src="./Day%202/IMG_4171.jpg" class="group">
-                <img src="./Day%202/IMG_4175.jpg" class="group">
-                <img src="./Day%202/IMG_4176.jpg" class="group">
-                <img src="./Day%202/IMG_4194.jpg" class="group">
-                <img src="./Day%202/IMG_4200.jpg" class="group">
-                <img src="./Day%202/IMG_4202.jpg" class="group">
-                <img src="./Day%202/IMG_4219.jpg" class="group">
-                <img src="./Day%202/IMG_4220.jpg" class="group">
-                <img src="./Day%202/IMG_4227.jpg" class="group">
-                <img src="./Day%202/IMG_4228.jpg" class="group">
-                <img src="./Day%202/IMG_4230.jpg" class="group">
-                <img src="./Day%202/IMG_4233.jpg" class="group">
-                <img src="./Day%202/IMG_4235.jpg" class="group">
-                <img src="./Day%202/IMG_4236.jpg" class="group">
-                <img src="./Day%202/IMG_4246.jpg" class="group">
-                <img src="./Day%202/IMG_4247.jpg" class="group">
-                <img src="./Day%202/IMG_4249.jpg" class="group">
-                <img src="./Day%202/IMG_4253.jpg" class="group">
-                <img src="./Day%202/IMG_4256.jpg" class="group">
-                <img src="./Day%202/IMG_4257.jpg" class="group">
-                <img src="./Day%202/IMG_4265.jpg" class="group" style="padding-right:10vh;">
-                <div class="filterright"></div>
-            </div>
-        </div>
-        <div class="introsection" style="margin-top:10vh;flex-direction:column;" data-aos="fade-up" data-aos-duration="1000">
-            <div class='upperdaywise'>
-                <div class="daywiseheading">DAY&nbsp;<span>3</span></div>
-            </div>
-            <div class="daywisepara">This was apparently a temple in 'Halebidu' and held the most significance from the looks and the size (land) of it. We had a fun little pop quiz by Sanctum Sanctorum the result of which I dont remember.</div>
-            <div style="font-family:bebas neue; font-size:2.5vh;color:white;text-align:center;margin-top:5vh;">(23 PHOTOS HORIZONTAL SCROLL)</div>
-            <div class="infinitecarousel">
-                <div class="filterleft"></div>
-                <img src="./Day%203/IMG_4287.jpg" class="group">
-                <img src="./Day%203/IMG_4289.jpg" class="group">
-                <img src="./Day%203/IMG_4295.jpg" class="group">
-                <img src="./Day%203/IMG_4302.jpg" class="group">
-                <img src="./Day%203/IMG_4304.jpg" class="group">
-                <img src="./Day%203/IMG_4305.jpg" class="group">
-                <img src="./Day%203/IMG_4306.jpg" class="group">
-                <img src="./Day%203/IMG_4307.jpg" class="group">
-                <img src="./Day%203/IMG_4320.jpg" class="group">
-                <img src="./Day%203/IMG_4330.jpg" class="group">
-                <img src="./Day%203/IMG_4333.jpg" class="group">
-                <img src="./Day%203/IMG_4334.jpg" class="group">
-                <img src="./Day%203/IMG_4342.jpg" class="group">
-                <img src="./Day%203/IMG_4343.jpg" class="group">
-                <img src="./Day%203/IMG_4349.jpg" class="group">
-                <img src="./Day%203/IMG_4351.jpg" class="group">
-                <img src="./Day%203/IMG_4358.jpg" class="group">
-                <img src="./Day%203/IMG_4359.jpg" class="group">
-                <img src="./Day%203/IMG_4367.jpg" class="group">
-                <img src="./Day%203/IMG_4368.jpg" class="group">
-                <img src="./Day%203/IMG_4374.jpg" class="group">
-                <img src="./Day%203/IMG_4376.jpg" class="group">
-                <img src="./Day%203/IMG_4378.jpg" class="group">
-                <img src="./Day%203/IMG_4380.jpg" class="group" style="padding-right:10vh;">
-                <div class="filterright"></div>
-            </div>
-        </div>
+        </footer>
+        <footer class="phaseonecreds">(AI) COULD NEVER</footer>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
 
             document.querySelectorAll('.group').forEach(img => {
-                img.setAttribute('loading', 'lazy');//so you're browser and/or computer doesnt start crying for help loading your heavyload pictures.
+                img.setAttribute('loading', 'lazy');//so your browser and/or computer doesnt start crying for help loading your heavyload pictures.
             });
             AOS.init({
                 once:true
