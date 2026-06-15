@@ -524,7 +524,7 @@
                 opacity:0.8;
             }
             .phaseonefooter{
-                background:#1c1c1c;
+                background:#100f0f;
                 width:100%;
                 height:70vh;
                 display:flex;
@@ -535,7 +535,7 @@
             .phaseonecreds{
                 font-family:bebas neue;
                 color:#464646;
-                background:#100f0f;
+                background:#141414;
                 width:100%;
                 height:12.5vh;
                 text-align:center;
@@ -626,8 +626,8 @@
             <button class="intronavbtn" onclick="Neithal()">NEITHAL</button>
             <button class="intronavbtn" onclick="Hoysala()">HOYSALA</button>
             <div style="margin:40px;font-size:2.3vh;z-index:5;opacity:0.8;">REMINISCENCE</div>
-            <button class="intronavbtn">GOA</button>
-            <button class="intronavbtn">GRAD</button>
+            <button class="intronavbtn" onclick="Goa()">GOA</button>
+            <button class="intronavbtn" onclick="Grad()">GRAD</button>
         </nav>
         <div class="introsection">
             <div class="filterup"></div>
@@ -1045,7 +1045,7 @@
                                 <source src="./Hoysala Tube/tiredpassengers.mp4" type="video/mp4">
                             </video>
                             <div style="display:flex;flex-direction:column;width:40%;">
-                                <div class="vidtext1">Tired Passengers ;-;</div>
+                                <div class="vidtext1">Tired Passengers</div>
                                 <div class="shotby">SHOT BY JISHNU</div>
                             </div>
                         </div>
@@ -1098,13 +1098,13 @@
                 <img src="IMG_3013.jpg" class="intimateimg">
                 <div class="intimatehead">Goa & Graduation</div>
                 <div class="intimatepara">Due to possible bandwidth issues both the 'Goa' and 'Graduation' bits have been moved to another page instead of cramming it here and making your browser cry for help. Click the button below</div>
-                <button class="standardbutton" style="width:50vh;height:10vh;">LINK TO GOA</button>
+                <button class="standardbutton" style="width:50vh;height:10vh;" onclick="Goa()">LINK TO GOA</button>
             </div>
         </div>
         <footer class="phaseonefooter">
             <div class="footer1">
                 <div class="foothead1">Reminiscence.</div>
-                <div class="footpara1">Designed and made by [12a08 BVS'26] | NOT TO BE SHARED WITH NON BVS'26 GRADUATES TO AVOID CRASHING THE WEBSITE.</div>
+                <div class="footpara1">APPRECIATE YOUR VISIT. WISH YOU LUCK IN YOUR COLLEGE LIFE AND THEREAFTER.</div>
             </div>
             <div class="footer1" style="margin-left:10vh;">
                 <button class="foothead2">Neithal</button>
@@ -1121,7 +1121,7 @@
                 <button class="footpara2">Day Wise Photos</button>
             </div>
         </footer>
-        <footer class="phaseonecreds">(AI) COULD NEVER</footer>
+        <footer class="phaseonecreds">DATE OF COMPLETION : 1st APRIL 2026</footer>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
 
@@ -1144,6 +1144,12 @@
             function Hoysala(){
                 const hoysalajs=document.getElementById('hoysalajs');
                 hoysalajs.scrollIntoView();
+            }
+            function Goa() {
+                window.location.href = "https://reminiscencebvs26.github.io/goa/";
+            }
+            function Grad() {
+                window.location.href = "https://reminiscencebvs26.github.io/graduation/";
             }
             function showBus(){
                 const moreimgdisp=document.querySelector('.moreimgdisp');
