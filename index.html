@@ -1104,7 +1104,7 @@
         <footer class="phaseonefooter">
             <div class="footer1">
                 <div class="foothead1">Reminiscence.</div>
-                <div class="footpara1">APPRECIATE YOUR VISIT. WISH YOU LUCK IN YOUR COLLEGE LIFE AND THEREAFTER.</div>
+                <div class="footpara1">APPRECIATE YOUR VISIT. THE SITE HAS HAD <span id="visit-count">0</span>VISITS SINCE 17TH JUNE 2026</div>
             </div>
             <div class="footer1" style="margin-left:10vh;">
                 <button class="foothead2">Neithal</button>
@@ -1237,6 +1237,23 @@
                 t7.style.opacity=1;
                 t8.style.opacity=1;
             });
+            async function updateVisitCount() {
+            const namespace = "siddharth-rishis-team-4494";
+            const apiKey = "ut_naREmwD4JSMtmEyhuGHCqto3coPtfdu3ZP2dgh5R"; 
+            const pageKey = window.location.pathname.replace(/[^a-zA-Z0-9]/g, "_") || "home";
+
+            try {
+                const response = await fetch(`https://api.counterapi.dev/v1/${namespace}/${apiKey}_${pageKey}/up`);
+                const data = await response.json();
+                
+                document.getElementById('visit-count').innerText = data.value;
+            } catch (error) {
+                console.error("Error fetching visit count:", error);
+                document.getElementById('visit-count').innerText = "Unavailable";
+            }
+            }
+
+            updateVisitCount();
         </script>
         <div style="position:absolute;top:15000px;">r</div>
     </body>
