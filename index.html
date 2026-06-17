@@ -1238,20 +1238,25 @@
                 t8.style.opacity=1;
             });
             async function updateVisitCount() {
-            const namespace = "siddharth-rishis-team-4494";
+            const namespace = "siddharth-rishis-team-4494"; 
             const apiKey = "ut_naREmwD4JSMtmEyhuGHCqto3coPtfdu3ZP2dgh5R"; 
             const pageKey = window.location.pathname.replace(/[^a-zA-Z0-9]/g, "_") || "home";
 
             try {
-                const response = await fetch(`https://api.counterapi.dev/v1/${namespace}/${apiKey}_${pageKey}/up`);
+                const response = await fetch(`https://api.counterapi.dev/v1/${namespace}/${pageKey}/up?key=${apiKey}`);
+                
+                if (!response.ok) throw new Error("API response error");
+                
                 const data = await response.json();
                 
                 document.getElementById('visit-count').innerText = data.value;
             } catch (error) {
                 console.error("Error fetching visit count:", error);
-                document.getElementById('visit-count').innerText = "Unavailable";
+                document.getElementById('visit-count').innerText = "0"; // Fallback to 0 if it fails
             }
             }
+
+            updateVisitCount();
 
             updateVisitCount();
         </script>
